@@ -1,0 +1,52 @@
+:root{
+    ---light-gray:#f0f2f5;
+    ---dark-gray:#606770;
+}
+*{box-sizing: border-box;}
+.bg-light-gray{
+    background-color: var(---light-gray);
+}
+.card-title{
+    width: fit-content;
+}
+.card-title img{
+    width: 50px;
+    height: 50px;
+}
+div[liked] button, div[liked] button:hover{
+    color: blue;
+}
+.comment{
+    width: fit-content;
+    max-width: 70%;
+    background-color: var(---light-gray);
+
+}
+.comment:nth-last-child(1){margin-bottom: 70px !important;}
+.comment-author{
+    width: fit-content;
+}
+.comment-author img{
+    width: 30px;
+    height: 30px;
+}
+.comment-body{
+
+}
+
+.comments-container{
+    transition-duration: 5s;
+    transition-property: height;
+    position: relative;
+    /* padding-bottom: 24px; */
+    overflow: hidden;
+}
+.hide{
+    height:0;
+    padding: 0;
+}
+.add-comment{
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+}
